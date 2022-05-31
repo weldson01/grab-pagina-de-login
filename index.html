@@ -3,9 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Grab - Login</title>
   </head>
   <body>
-    
+    <main>
+      <div class="login">
+        <div class="logo">
+          <img src="./assets/logo-grab.svg" alt="logo grab">
+        </div>
+        <div class="formulario">
+          <form method="post" id="form">
+            <div class="input">
+              <div class="icon"> <i class="fa-solid fa-at"></i></div>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input">
+              <div class="icon"><i class="fa-solid fa-lock"></i></div>
+              <input type="password" name="senha" id="senha" required>
+            </div>
+              <button class="btn-sub" id="submit">Entrar</button>
+          </form>
+        </div>
+        <div class="problema-entrar">
+          <p>problemas para entrar?</p>
+          <a href="#">clique aqui</a>
+        </div>
+      </div>
+      <div class="imagem-lateral">
+        <img src="./assets/team.jpg" alt="imagem de uma equipe trabalhando">
+      </div>
+    </main>
   </body>
 </html>

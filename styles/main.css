@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+}
+main{
+    margin:20px;
+    width:calc(100vw - 40px);
+    height:calc(100vh - 40px);
+    display:flex;
+    flex-flow: row nowrap;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.login{
+    background-color: #4E5BEE;
+    width: 40%;
+    height:100%;
+    display:flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+.logo {
+    width: 9em;
+    margin-top: 8em;
+}
+.logo img{
+    width: 100%
+}
+.imagem-lateral{
+    width:60%;
+    height:100%;
+}
+.imagem-lateral img{
+    width: 100%;
+    height: 100%;
+}
+
+.login .formulario form{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.login .formulario form .input,
+.login .formulario form button{
+    width: 16em;
+    height: 2em;
+    padding-left: 0.5em;
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 1em;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+.login .formulario form button{
+    background-color: #fff;
+    color: #4E5BEE;
+}
+.input{
+    display:flex;
+    flex-direction: row;
+}
+.input .icon{
+    width: 2em;
+    height: 100%;
+    color: #fff;
+    font-size: 1em;
+    display:flex;
+    align-items: center;
+}
+.input input{
+    background: transparent;
+    box-sizing: border-box;
+    color: #fff;
+    width: 90%;
+    border: none;
+    padding-left:0.5em;
+    font-size:1em;
+    border-style: none;
+
+}
+.input input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.problema-entrar{
+    text-align: center;
+    color: #fff;
+}
