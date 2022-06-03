@@ -16,8 +16,9 @@
           <form method="post" id="form">
             <div class="input">
               <div class="icon"> <i class="fa-solid fa-at"></i></div>
-              <input type="email" name="email" id="email" required>
+              <input type="email" name="email" id="email" onblur="validacao()" required>
             </div>
+            <div class="erro-email oculto"><p>Por favor, insira um email válido.</p></div>
             <div class="input">
               <div class="icon"><i class="fa-solid fa-lock"></i></div>
               <input type="password" name="senha" id="senha" required>
@@ -34,5 +35,6 @@
         <img src="./assets/team.jpg" alt="imagem de uma equipe trabalhando">
       </div>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>

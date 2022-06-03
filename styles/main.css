@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-body{
+@import url('./responsivo.css');
+
+*{
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
     color: #fff;
-
+    box-sizing: border-box;
 }
 main{
     margin:20px;
@@ -18,16 +20,7 @@ a{
     text-decoration: none;
     color:#fff;
 }
-.login{
-    background-color: #4E5BEE;
-    width: 40%;
-    height:100%;
-    display:flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 10px 0 0 10px;
-}
+
 .logo {
     width: 9em;
     margin-top: 8em;
@@ -43,11 +36,17 @@ a{
     width: 100%;
     height: 100%;
 }
+.login .formulario{
+    align-items:center;
+    height: 40%;
+}
 
 .login .formulario form{
     display:flex;
     flex-direction: column;
     width: 100%;
+    height:100%;
+    justify-content: center;
     align-items: center;
 }
 .login .formulario form .input,
@@ -57,7 +56,6 @@ a{
     padding-left: 0.5em;
     color: #fff;
     font-size: 1em;
-    margin-bottom: 1em;
     background: transparent;
     border: 2px solid #fff;
     border-radius: 30px;
@@ -65,6 +63,7 @@ a{
 .login .formulario form button{
     background-color: #fff;
     color: #4E5BEE;
+    margin-top: 1em;
 }
 .input{
     display:flex;
@@ -97,4 +96,11 @@ a{
 .problema-entrar{
     text-align: center;
     color: #fff;
+}
+.erro-email{
+    font-size: 1em;
+    color: #fff;
+}
+.oculto{
+    opacity: 0;
 }
